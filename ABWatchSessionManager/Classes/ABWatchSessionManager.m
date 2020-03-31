@@ -13,6 +13,7 @@
 @end
 
 @implementation ABWatchSessionManager
+@synthesize session = _session, delegates = _delegates;
 
 + (ABWatchSessionManager *)sharedInstance
 {
@@ -72,11 +73,10 @@
 
 - (WCSession *)session
 {
-    if ([WCSession isSupported]) {
-        return [WCSession defaultSession];
-    } else {
-        return nil;
+    if (!_session && [WCSession isSupported]) {
+        _session =  [WCSession defaultSession];
     }
+    return _session;
 }
 
 #pragma mark - WCSessionDelegate
@@ -198,7 +198,11 @@
 
 - (void)session:(WCSession * __nonnull)session didFinishUserInfoTransfer:(WCSessionUserInfoTransfer *)userInfoTransfer error:(nullable NSError *)error
 {
-    
+    [self.delegates enumerateObjectsUsingBlock:^(id<WCSessionDelegate> delegate, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([delegate conformsToProtocol:@protocol(WCSessionDelegate)] && [delegate respondsToSelector:@selector(session:didFinishUserInfoTransfer:error:)]) {
+            [delegate session:session didFinishUserInfoTransfer:userInfoTransfer error:error];
+        }
+    }];
 }
 
 - (void)session:(WCSession *)session didReceiveUserInfo:(NSDictionary<NSString *, id> *)userInfo
@@ -230,11 +234,12 @@
 
 #pragma mark - getters and setters
 
-- (void)addDelegatesObject:(__weak id <WCSessionDelegate>)object
+- (NSMutableArray<id <WCSessionDelegate>> *)delegates
 {
-    if ([object conformsToProtocol:@protocol(WCSessionDelegate)]) {
-        [_delegates addObject:object];
+    if (!_delegates) {
+        _delegates = [[NSMutableArray alloc] init];
     }
+    return _delegates;
 }
 
 @end

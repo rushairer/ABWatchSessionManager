@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL isValidSession __WATCHOS_UNAVAILABLE;
 #endif
 
-@property (nonatomic, weak, readonly) WCSession *session;
+@property (nonatomic, strong, readonly) WCSession *session;
 
 + (ABWatchSessionManager *)sharedInstance;
 
