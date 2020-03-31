@@ -22,7 +22,7 @@ pod 'ABWatchSessionManager'
 
 ## Author
 
-rushairer, 5195693+rushairer@users.noreply.github.com
+Abenx, aben@abenx.com
 
 ## License
 

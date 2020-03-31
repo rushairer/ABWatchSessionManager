@@ -1,5 +1,5 @@
 //
-//  ABWATCHSESSIONMANAGERAppDelegate.h
+//  AppDelegate.h
 //  ABWatchSessionManager
 //
 //  Created by rushairer on 03/31/2020.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface ABWATCHSESSIONMANAGERAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

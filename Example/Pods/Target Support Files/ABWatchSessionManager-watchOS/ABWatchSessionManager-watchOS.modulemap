@@ -1,0 +1,6 @@
+framework module ABWatchSessionManager {
+  umbrella header "ABWatchSessionManager-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

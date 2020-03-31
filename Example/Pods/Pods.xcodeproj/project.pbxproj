@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0A7B2093B02F95E20E56C68F085AE9 /* ABWatchSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9220BCAA59C18E226E46050E2624B7C3 /* ABWatchSessionManager.m */; };
+		147DB513A01AA1091050EE3F8F3EB048 /* Pods-ABWatchSessionManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E208A72B16BD2264AE5FE9D4CE012590 /* Pods-ABWatchSessionManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15198868BC6ED66FDBD2850CEAA7066E /* Pods-ABWatchSessionManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D7F0099C59C50A3891E5CE32120475 /* Pods-ABWatchSessionManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2472144B2AFC4554C5CDB1BE18E3C76A /* ABWatchSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EB764E94BDF515B97B5615D9167A9EC8 /* ABWatchSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27440D5BAB2E08B190F79FFD7C1DE232 /* ABWatchSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EB764E94BDF515B97B5615D9167A9EC8 /* ABWatchSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		351CE6F40DC431C23D451393C732FB09 /* Pods-ABWatchSessionManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A781DCF19CC4FB7351AC72890D5091 /* Pods-ABWatchSessionManager_Tests-dummy.m */; };
+		398955BFC66491C4F779FF75DA1A4850 /* ABWatchSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9220BCAA59C18E226E46050E2624B7C3 /* ABWatchSessionManager.m */; };
+		3A951DAD054A1BAE1344AB3801C189A2 /* Pods-EampleWatch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 960C72BFA74FD1E6B8267DAC58E231D2 /* Pods-EampleWatch Extension-dummy.m */; };
+		60B4B75E676812BF0834C4DC562F5198 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		63397DF52F077249A7E58CB06F794FFD /* Pods-EampleWatch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D238B52CB997F4D717B1593AD14A8B6C /* Pods-EampleWatch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D7FD24B31DD3C8A1E81CBE768C8E1C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		7AA33D6A194FD7449D12D2927A7ED16B /* ABWatchSessionManager-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B051C427A1587DF2C140F32998D28E08 /* ABWatchSessionManager-iOS-dummy.m */; };
+		80C5B375E99EDBF6415BE0CFCE3F6965 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		9963A6B8F2938EC462D6671E8C648053 /* Pods-ABWatchSessionManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C0A11F5EBB9D67F177C16400668F5E /* Pods-ABWatchSessionManager_Example-dummy.m */; };
+		AF0ABD15AD207F4C2487F838E0AD7935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		BA30F4E3A1666505CE21CB6EFFCE764C /* ABWatchSessionManager-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F32B915D0E10EEE902BE479056AC5B4D /* ABWatchSessionManager-watchOS-dummy.m */; };
+		C85DEC2627AFDE667CEDFB48C7048816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		DF0638CD8DC42E7BDE27431806784A1B /* ABWatchSessionManager-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FCA1A32C154C78A62F2A86A624FD8E /* ABWatchSessionManager-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B0F6C13BAB41A0982FE07891361C9E /* ABWatchSessionManager-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECA93AF1AFCE3DC6CA6252DBB587504 /* ABWatchSessionManager-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		968530875386AEA43018DC61D27B76CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9783D8161C64DE8FB53D826AD371532E;
+			remoteInfo = "Pods-ABWatchSessionManager_Example";
+		};
+		9DE3368053727D6D4D97AFED45B9EC8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F7EE60F5CA1BADC3B4FB7D5ED57EFE3;
+			remoteInfo = "ABWatchSessionManager-watchOS";
+		};
+		E28E53440FA41CC6568E17FDD54D772D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48D9BD87C229975BE8C028C39829A32B;
+			remoteInfo = "ABWatchSessionManager-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083A2AD7A96F35E43A7E92B52262808F /* Pods-ABWatchSessionManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ABWatchSessionManager_Tests-Info.plist"; sourceTree = "<group>"; };
+		0F9BAC9E6EA192E7F0365ED941F85CAC /* Pods-ABWatchSessionManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ABWatchSessionManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		19CE4396B4EA8137B01A5C30692B118C /* Pods-EampleWatch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EampleWatch Extension.modulemap"; sourceTree = "<group>"; };
+		1ABE3490EFB7FA501A6D7EF42934F06F /* Pods-ABWatchSessionManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ABWatchSessionManager_Tests.modulemap"; sourceTree = "<group>"; };
+		1D3D610AC6485D7181D0F673E75898FC /* Pods-ABWatchSessionManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ABWatchSessionManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		22A07889A1AD8D40B1D84A4C25B3AF38 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2989664A357411FD105220ABC2E2E4B4 /* ABWatchSessionManager-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ABWatchSessionManager-iOS-Info.plist"; sourceTree = "<group>"; };
+		2B4FD25DF0306B0CDC5B812E9F0513E3 /* Pods-EampleWatch Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EampleWatch Extension-frameworks.sh"; sourceTree = "<group>"; };
+		2ECA93AF1AFCE3DC6CA6252DBB587504 /* ABWatchSessionManager-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ABWatchSessionManager-iOS-umbrella.h"; sourceTree = "<group>"; };
+		3FFFC7B2C96C31AD2F8C82944F43AD0B /* Pods-EampleWatch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EampleWatch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		43F6A500E176CBE717F7932F8EB5F32C /* Pods-ABWatchSessionManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ABWatchSessionManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CEBEA0AEF7C69AFD4FC36C6D0C2AD3A /* ABWatchSessionManager-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ABWatchSessionManager-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5853B06F2C4AFCE9E9543EBA843463A9 /* ABWatchSessionManager-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ABWatchSessionManager-watchOS-prefix.pch"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		5A23B53F9737C7C1704D461A0730AF66 /* Pods_ABWatchSessionManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ABWatchSessionManager_Tests.framework; path = "Pods-ABWatchSessionManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5F89640F87A24705C9DF9BD5175D1A1E /* Pods-ABWatchSessionManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ABWatchSessionManager_Example-Info.plist"; sourceTree = "<group>"; };
+		679C2693DD89952674A7FDB6592E6B82 /* ABWatchSessionManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ABWatchSessionManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		69D773247E880F3229B5740CF4650BAB /* ABWatchSessionManager-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ABWatchSessionManager-iOS-prefix.pch"; sourceTree = "<group>"; };
+		69DA87294F1B507C11674408AFB2DA2F /* ABWatchSessionManager-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ABWatchSessionManager-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		71B55FFE6BE3134E9080B9EA6A4C2D24 /* ABWatchSessionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ABWatchSessionManager.framework; path = "ABWatchSessionManager-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E0D056D158650083F8EC98663150FE /* Pods-EampleWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EampleWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		7B93406E1C2530F0E1CAE1DAA843C56C /* Pods-ABWatchSessionManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ABWatchSessionManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		80EB3F9C2A37283B84896CAA82DF9A71 /* Pods_EampleWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EampleWatch_Extension.framework; path = "Pods-EampleWatch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81ED89F804CA7B6AEF8DA6A059F7B0FC /* ABWatchSessionManager-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ABWatchSessionManager-iOS.modulemap"; sourceTree = "<group>"; };
+		86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8782A81E1DDCCA847F703C8406F582E8 /* ABWatchSessionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ABWatchSessionManager.framework; path = "ABWatchSessionManager-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEEC2859EBC306D2964F088E967A616 /* ABWatchSessionManager-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ABWatchSessionManager-watchOS.modulemap"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS.modulemap"; sourceTree = "<group>"; };
+		9220BCAA59C18E226E46050E2624B7C3 /* ABWatchSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ABWatchSessionManager.m; path = ABWatchSessionManager/Classes/ABWatchSessionManager.m; sourceTree = "<group>"; };
+		960C72BFA74FD1E6B8267DAC58E231D2 /* Pods-EampleWatch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EampleWatch Extension-dummy.m"; sourceTree = "<group>"; };
+		9D2ACA511B3742215554D58E33E9868D /* Pods-EampleWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EampleWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4D7F0099C59C50A3891E5CE32120475 /* Pods-ABWatchSessionManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ABWatchSessionManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AB672ED2E815000AD15A77D957F44C60 /* Pods-ABWatchSessionManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ABWatchSessionManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B036EFE82701C872851820D1501DB131 /* ABWatchSessionManager-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ABWatchSessionManager-watchOS.debug.xcconfig"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B051C427A1587DF2C140F32998D28E08 /* ABWatchSessionManager-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ABWatchSessionManager-iOS-dummy.m"; sourceTree = "<group>"; };
+		B20CDC96F3EEEF1768C8BBCB27C70098 /* Pods-EampleWatch Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EampleWatch Extension-Info.plist"; sourceTree = "<group>"; };
+		C366DEFE383F645AB216B2A104C8A730 /* Pods-ABWatchSessionManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ABWatchSessionManager_Example.modulemap"; sourceTree = "<group>"; };
+		C8A781DCF19CC4FB7351AC72890D5091 /* Pods-ABWatchSessionManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ABWatchSessionManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		C9CC963BB4281A0276F126023AD8E02C /* Pods-ABWatchSessionManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ABWatchSessionManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D238B52CB997F4D717B1593AD14A8B6C /* Pods-EampleWatch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EampleWatch Extension-umbrella.h"; sourceTree = "<group>"; };
+		D4B6CA2819E390CC0EF8CF129084B737 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D6EDF3349BFCD8D2DCC5CFB207392D6D /* Pods-ABWatchSessionManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ABWatchSessionManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA26C6EA5AB87869CBF543424C35AC4A /* Pods-EampleWatch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EampleWatch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E208A72B16BD2264AE5FE9D4CE012590 /* Pods-ABWatchSessionManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ABWatchSessionManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		E4C0A11F5EBB9D67F177C16400668F5E /* Pods-ABWatchSessionManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ABWatchSessionManager_Example-dummy.m"; sourceTree = "<group>"; };
+		E7B8B5B74B4EDCCF879328757CE9F7BD /* Pods_ABWatchSessionManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ABWatchSessionManager_Example.framework; path = "Pods-ABWatchSessionManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB764E94BDF515B97B5615D9167A9EC8 /* ABWatchSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ABWatchSessionManager.h; path = ABWatchSessionManager/Classes/ABWatchSessionManager.h; sourceTree = "<group>"; };
+		EF83CFF3C70A1866540F86AF45BB8E1F /* Pods-ABWatchSessionManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ABWatchSessionManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F32B915D0E10EEE902BE479056AC5B4D /* ABWatchSessionManager-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ABWatchSessionManager-watchOS-dummy.m"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-dummy.m"; sourceTree = "<group>"; };
+		F52F0C603C9378B61AD05040320DBF64 /* ABWatchSessionManager-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ABWatchSessionManager-watchOS.release.xcconfig"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		F5567FB9CA50E0BCEF0AEA80A2BEF447 /* Pods-ABWatchSessionManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ABWatchSessionManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7245E54E164AD667D28625A18E8E906 /* ABWatchSessionManager-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ABWatchSessionManager-watchOS-Info.plist"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-Info.plist"; sourceTree = "<group>"; };
+		F9FCA1A32C154C78A62F2A86A624FD8E /* ABWatchSessionManager-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ABWatchSessionManager-watchOS-umbrella.h"; path = "../ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		312A40A1E3225F0A22E8D122CE0481A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7FD24B31DD3C8A1E81CBE768C8E1C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DC82E0EBEF18CFF2A22A03013318F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B4B75E676812BF0834C4DC562F5198 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA0AF1E43FEDF2711B43DF4595F4BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C5B375E99EDBF6415BE0CFCE3F6965 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C5FCAE5873A5299BFCFE0768B961A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85DEC2627AFDE667CEDFB48C7048816 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F731918CFC4533D3E2B273A4501038A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0ABD15AD207F4C2487F838E0AD7935 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1707F4CD21AF551C4EFAB305B34B3369 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81ED89F804CA7B6AEF8DA6A059F7B0FC /* ABWatchSessionManager-iOS.modulemap */,
+				B051C427A1587DF2C140F32998D28E08 /* ABWatchSessionManager-iOS-dummy.m */,
+				2989664A357411FD105220ABC2E2E4B4 /* ABWatchSessionManager-iOS-Info.plist */,
+				69D773247E880F3229B5740CF4650BAB /* ABWatchSessionManager-iOS-prefix.pch */,
+				2ECA93AF1AFCE3DC6CA6252DBB587504 /* ABWatchSessionManager-iOS-umbrella.h */,
+				69DA87294F1B507C11674408AFB2DA2F /* ABWatchSessionManager-iOS.debug.xcconfig */,
+				4CEBEA0AEF7C69AFD4FC36C6D0C2AD3A /* ABWatchSessionManager-iOS.release.xcconfig */,
+				8FEEC2859EBC306D2964F088E967A616 /* ABWatchSessionManager-watchOS.modulemap */,
+				F32B915D0E10EEE902BE479056AC5B4D /* ABWatchSessionManager-watchOS-dummy.m */,
+				F7245E54E164AD667D28625A18E8E906 /* ABWatchSessionManager-watchOS-Info.plist */,
+				5853B06F2C4AFCE9E9543EBA843463A9 /* ABWatchSessionManager-watchOS-prefix.pch */,
+				F9FCA1A32C154C78A62F2A86A624FD8E /* ABWatchSessionManager-watchOS-umbrella.h */,
+				B036EFE82701C872851820D1501DB131 /* ABWatchSessionManager-watchOS.debug.xcconfig */,
+				F52F0C603C9378B61AD05040320DBF64 /* ABWatchSessionManager-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ABWatchSessionManager-iOS";
+			sourceTree = "<group>";
+		};
+		2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		43085B5EC92BA9333228B94389FFA518 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */,
+				43085B5EC92BA9333228B94389FFA518 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		811068F4FF48FDC5A0615346A96B9824 /* Pods-ABWatchSessionManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C366DEFE383F645AB216B2A104C8A730 /* Pods-ABWatchSessionManager_Example.modulemap */,
+				43F6A500E176CBE717F7932F8EB5F32C /* Pods-ABWatchSessionManager_Example-acknowledgements.markdown */,
+				F5567FB9CA50E0BCEF0AEA80A2BEF447 /* Pods-ABWatchSessionManager_Example-acknowledgements.plist */,
+				E4C0A11F5EBB9D67F177C16400668F5E /* Pods-ABWatchSessionManager_Example-dummy.m */,
+				7B93406E1C2530F0E1CAE1DAA843C56C /* Pods-ABWatchSessionManager_Example-frameworks.sh */,
+				5F89640F87A24705C9DF9BD5175D1A1E /* Pods-ABWatchSessionManager_Example-Info.plist */,
+				E208A72B16BD2264AE5FE9D4CE012590 /* Pods-ABWatchSessionManager_Example-umbrella.h */,
+				1D3D610AC6485D7181D0F673E75898FC /* Pods-ABWatchSessionManager_Example.debug.xcconfig */,
+				AB672ED2E815000AD15A77D957F44C60 /* Pods-ABWatchSessionManager_Example.release.xcconfig */,
+			);
+			name = "Pods-ABWatchSessionManager_Example";
+			path = "Target Support Files/Pods-ABWatchSessionManager_Example";
+			sourceTree = "<group>";
+		};
+		861DC2E54D0830B3943DE4A7DCDB5010 /* Pods-ABWatchSessionManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1ABE3490EFB7FA501A6D7EF42934F06F /* Pods-ABWatchSessionManager_Tests.modulemap */,
+				C9CC963BB4281A0276F126023AD8E02C /* Pods-ABWatchSessionManager_Tests-acknowledgements.markdown */,
+				D6EDF3349BFCD8D2DCC5CFB207392D6D /* Pods-ABWatchSessionManager_Tests-acknowledgements.plist */,
+				C8A781DCF19CC4FB7351AC72890D5091 /* Pods-ABWatchSessionManager_Tests-dummy.m */,
+				083A2AD7A96F35E43A7E92B52262808F /* Pods-ABWatchSessionManager_Tests-Info.plist */,
+				A4D7F0099C59C50A3891E5CE32120475 /* Pods-ABWatchSessionManager_Tests-umbrella.h */,
+				0F9BAC9E6EA192E7F0365ED941F85CAC /* Pods-ABWatchSessionManager_Tests.debug.xcconfig */,
+				EF83CFF3C70A1866540F86AF45BB8E1F /* Pods-ABWatchSessionManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-ABWatchSessionManager_Tests";
+			path = "Target Support Files/Pods-ABWatchSessionManager_Tests";
+			sourceTree = "<group>";
+		};
+		88FA3A17021708CBE1264B3C6810320A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA06EA9CF209CB4457C7046610F42D4E /* ABWatchSessionManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9CECD713B3FB79D780A86CB38C47E140 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				811068F4FF48FDC5A0615346A96B9824 /* Pods-ABWatchSessionManager_Example */,
+				861DC2E54D0830B3943DE4A7DCDB5010 /* Pods-ABWatchSessionManager_Tests */,
+				B8E5CF92D75C9FB2256668DD1B1ADAA0 /* Pods-EampleWatch Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA06EA9CF209CB4457C7046610F42D4E /* ABWatchSessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB764E94BDF515B97B5615D9167A9EC8 /* ABWatchSessionManager.h */,
+				9220BCAA59C18E226E46050E2624B7C3 /* ABWatchSessionManager.m */,
+				AECD00FCCF7EDC1624CE033E111F7CFC /* Pod */,
+				1707F4CD21AF551C4EFAB305B34B3369 /* Support Files */,
+			);
+			name = ABWatchSessionManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AECD00FCCF7EDC1624CE033E111F7CFC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				679C2693DD89952674A7FDB6592E6B82 /* ABWatchSessionManager.podspec */,
+				D4B6CA2819E390CC0EF8CF129084B737 /* LICENSE */,
+				22A07889A1AD8D40B1D84A4C25B3AF38 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B8E5CF92D75C9FB2256668DD1B1ADAA0 /* Pods-EampleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19CE4396B4EA8137B01A5C30692B118C /* Pods-EampleWatch Extension.modulemap */,
+				DA26C6EA5AB87869CBF543424C35AC4A /* Pods-EampleWatch Extension-acknowledgements.markdown */,
+				3FFFC7B2C96C31AD2F8C82944F43AD0B /* Pods-EampleWatch Extension-acknowledgements.plist */,
+				960C72BFA74FD1E6B8267DAC58E231D2 /* Pods-EampleWatch Extension-dummy.m */,
+				2B4FD25DF0306B0CDC5B812E9F0513E3 /* Pods-EampleWatch Extension-frameworks.sh */,
+				B20CDC96F3EEEF1768C8BBCB27C70098 /* Pods-EampleWatch Extension-Info.plist */,
+				D238B52CB997F4D717B1593AD14A8B6C /* Pods-EampleWatch Extension-umbrella.h */,
+				76E0D056D158650083F8EC98663150FE /* Pods-EampleWatch Extension.debug.xcconfig */,
+				9D2ACA511B3742215554D58E33E9868D /* Pods-EampleWatch Extension.release.xcconfig */,
+			);
+			name = "Pods-EampleWatch Extension";
+			path = "Target Support Files/Pods-EampleWatch Extension";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				88FA3A17021708CBE1264B3C6810320A /* Development Pods */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				E7C86A6CF24CA77692C5D3ABE92B4B3F /* Products */,
+				9CECD713B3FB79D780A86CB38C47E140 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E7C86A6CF24CA77692C5D3ABE92B4B3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71B55FFE6BE3134E9080B9EA6A4C2D24 /* ABWatchSessionManager.framework */,
+				8782A81E1DDCCA847F703C8406F582E8 /* ABWatchSessionManager.framework */,
+				E7B8B5B74B4EDCCF879328757CE9F7BD /* Pods_ABWatchSessionManager_Example.framework */,
+				5A23B53F9737C7C1704D461A0730AF66 /* Pods_ABWatchSessionManager_Tests.framework */,
+				80EB3F9C2A37283B84896CAA82DF9A71 /* Pods_EampleWatch_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B4418C3893F452110ED1DA665C87540 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0638CD8DC42E7BDE27431806784A1B /* ABWatchSessionManager-watchOS-umbrella.h in Headers */,
+				2472144B2AFC4554C5CDB1BE18E3C76A /* ABWatchSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462052D448D2009EC50BF1F052FF04B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63397DF52F077249A7E58CB06F794FFD /* Pods-EampleWatch Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6D1FBBD43877D32FD24C4A68BA848D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147DB513A01AA1091050EE3F8F3EB048 /* Pods-ABWatchSessionManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB861F280CBAD74155C49F98947B84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15198868BC6ED66FDBD2850CEAA7066E /* Pods-ABWatchSessionManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77EA9A2DF1CBC3532D47790DFF5DB5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B0F6C13BAB41A0982FE07891361C9E /* ABWatchSessionManager-iOS-umbrella.h in Headers */,
+				27440D5BAB2E08B190F79FFD7C1DE232 /* ABWatchSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		239DD1979259FCEF07D464D635200422 /* Pods-EampleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB445D35CD236595E2B68582D87B8FB6 /* Build configuration list for PBXNativeTarget "Pods-EampleWatch Extension" */;
+			buildPhases = (
+				462052D448D2009EC50BF1F052FF04B8 /* Headers */,
+				2B101A4942A70C6908C49ABCBF7331ED /* Sources */,
+				F731918CFC4533D3E2B273A4501038A6 /* Frameworks */,
+				3F7916540E4944B194417CB8EAA75DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05AF28D6E9A3BECA97F81FDD9C9CA523 /* PBXTargetDependency */,
+			);
+			name = "Pods-EampleWatch Extension";
+			productName = "Pods-EampleWatch Extension";
+			productReference = 80EB3F9C2A37283B84896CAA82DF9A71 /* Pods_EampleWatch_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48D9BD87C229975BE8C028C39829A32B /* ABWatchSessionManager-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91E256034B61FB29A302FDB7FCEE953D /* Build configuration list for PBXNativeTarget "ABWatchSessionManager-iOS" */;
+			buildPhases = (
+				F77EA9A2DF1CBC3532D47790DFF5DB5C /* Headers */,
+				23F647AA37ED58C132555940CA7EFC65 /* Sources */,
+				64DC82E0EBEF18CFF2A22A03013318F3 /* Frameworks */,
+				34D41C0CA04B371554391F48A6D51265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ABWatchSessionManager-iOS";
+			productName = "ABWatchSessionManager-iOS";
+			productReference = 71B55FFE6BE3134E9080B9EA6A4C2D24 /* ABWatchSessionManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F7EE60F5CA1BADC3B4FB7D5ED57EFE3 /* ABWatchSessionManager-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB20E46465B2876B27E87798C4ADD46F /* Build configuration list for PBXNativeTarget "ABWatchSessionManager-watchOS" */;
+			buildPhases = (
+				2B4418C3893F452110ED1DA665C87540 /* Headers */,
+				E4C2F7697C3F351899AF74485AAAC2BC /* Sources */,
+				312A40A1E3225F0A22E8D122CE0481A6 /* Frameworks */,
+				F8FE1C718328E212FEC2A58EB8265D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ABWatchSessionManager-watchOS";
+			productName = "ABWatchSessionManager-watchOS";
+			productReference = 8782A81E1DDCCA847F703C8406F582E8 /* ABWatchSessionManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85F47C5039BEEA54CDCE1977ADA20AF8 /* Pods-ABWatchSessionManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8217D00DBED6350B41245C2C479B48DA /* Build configuration list for PBXNativeTarget "Pods-ABWatchSessionManager_Tests" */;
+			buildPhases = (
+				A9AB861F280CBAD74155C49F98947B84 /* Headers */,
+				BD52787C931C2BF97F26BE151A677191 /* Sources */,
+				96C5FCAE5873A5299BFCFE0768B961A1 /* Frameworks */,
+				E4203B4B4BC2FF491FCDB6C0DF638F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689BF3D701A9FC60AAB0F2A41892D698 /* PBXTargetDependency */,
+			);
+			name = "Pods-ABWatchSessionManager_Tests";
+			productName = "Pods-ABWatchSessionManager_Tests";
+			productReference = 5A23B53F9737C7C1704D461A0730AF66 /* Pods_ABWatchSessionManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9783D8161C64DE8FB53D826AD371532E /* Pods-ABWatchSessionManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ADD4205F3CB84511566AD84D8A5F2B9 /* Build configuration list for PBXNativeTarget "Pods-ABWatchSessionManager_Example" */;
+			buildPhases = (
+				9C6D1FBBD43877D32FD24C4A68BA848D /* Headers */,
+				DBF8C9332F7947C65BB9475AC4DA2448 /* Sources */,
+				6AA0AF1E43FEDF2711B43DF4595F4BFD /* Frameworks */,
+				98957FC80FBAE6DCD05E1CB178339D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEBB5E317C6E5F66376E23FB636B47DD /* PBXTargetDependency */,
+			);
+			name = "Pods-ABWatchSessionManager_Example";
+			productName = "Pods-ABWatchSessionManager_Example";
+			productReference = E7B8B5B74B4EDCCF879328757CE9F7BD /* Pods_ABWatchSessionManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E7C86A6CF24CA77692C5D3ABE92B4B3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48D9BD87C229975BE8C028C39829A32B /* ABWatchSessionManager-iOS */,
+				7F7EE60F5CA1BADC3B4FB7D5ED57EFE3 /* ABWatchSessionManager-watchOS */,
+				9783D8161C64DE8FB53D826AD371532E /* Pods-ABWatchSessionManager_Example */,
+				85F47C5039BEEA54CDCE1977ADA20AF8 /* Pods-ABWatchSessionManager_Tests */,
+				239DD1979259FCEF07D464D635200422 /* Pods-EampleWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34D41C0CA04B371554391F48A6D51265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7916540E4944B194417CB8EAA75DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98957FC80FBAE6DCD05E1CB178339D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4203B4B4BC2FF491FCDB6C0DF638F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FE1C718328E212FEC2A58EB8265D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23F647AA37ED58C132555940CA7EFC65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA33D6A194FD7449D12D2927A7ED16B /* ABWatchSessionManager-iOS-dummy.m in Sources */,
+				0C0A7B2093B02F95E20E56C68F085AE9 /* ABWatchSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B101A4942A70C6908C49ABCBF7331ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A951DAD054A1BAE1344AB3801C189A2 /* Pods-EampleWatch Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD52787C931C2BF97F26BE151A677191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351CE6F40DC431C23D451393C732FB09 /* Pods-ABWatchSessionManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF8C9332F7947C65BB9475AC4DA2448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9963A6B8F2938EC462D6671E8C648053 /* Pods-ABWatchSessionManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C2F7697C3F351899AF74485AAAC2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA30F4E3A1666505CE21CB6EFFCE764C /* ABWatchSessionManager-watchOS-dummy.m in Sources */,
+				398955BFC66491C4F779FF75DA1A4850 /* ABWatchSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05AF28D6E9A3BECA97F81FDD9C9CA523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ABWatchSessionManager-watchOS";
+			target = 7F7EE60F5CA1BADC3B4FB7D5ED57EFE3 /* ABWatchSessionManager-watchOS */;
+			targetProxy = 9DE3368053727D6D4D97AFED45B9EC8F /* PBXContainerItemProxy */;
+		};
+		689BF3D701A9FC60AAB0F2A41892D698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ABWatchSessionManager_Example";
+			target = 9783D8161C64DE8FB53D826AD371532E /* Pods-ABWatchSessionManager_Example */;
+			targetProxy = 968530875386AEA43018DC61D27B76CA /* PBXContainerItemProxy */;
+		};
+		DEBB5E317C6E5F66376E23FB636B47DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ABWatchSessionManager-iOS";
+			target = 48D9BD87C229975BE8C028C39829A32B /* ABWatchSessionManager-iOS */;
+			targetProxy = E28E53440FA41CC6568E17FDD54D772D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29BF9C3189344FAB2F664A82F8362CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		44C3A5017EF95756472FF1DE7E3CA3D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CEBEA0AEF7C69AFD4FC36C6D0C2AD3A /* ABWatchSessionManager-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ABWatchSessionManager-iOS/ABWatchSessionManager-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ABWatchSessionManager-iOS/ABWatchSessionManager-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ABWatchSessionManager-iOS/ABWatchSessionManager-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ABWatchSessionManager;
+				PRODUCT_NAME = ABWatchSessionManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B156400F34AE7357B37E4DFD0F6DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E0D056D158650083F8EC98663150FE /* Pods-EampleWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		6324DB1635B6F37EEFDACB66D3B8A49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DA87294F1B507C11674408AFB2DA2F /* ABWatchSessionManager-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ABWatchSessionManager-iOS/ABWatchSessionManager-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ABWatchSessionManager-iOS/ABWatchSessionManager-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ABWatchSessionManager-iOS/ABWatchSessionManager-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ABWatchSessionManager;
+				PRODUCT_NAME = ABWatchSessionManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68A365493258CC9E60664C7A3F70D6AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		AB813B3631B558CACF0F695E22275856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9BAC9E6EA192E7F0365ED941F85CAC /* Pods-ABWatchSessionManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ABWatchSessionManager_Tests/Pods-ABWatchSessionManager_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ABWatchSessionManager_Tests/Pods-ABWatchSessionManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACC8F6241A9C2968F39CFC1352B23A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52F0C603C9378B61AD05040320DBF64 /* ABWatchSessionManager-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = ABWatchSessionManager;
+				PRODUCT_NAME = ABWatchSessionManager;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B702011189BDC87C6831A671B3DC123E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB672ED2E815000AD15A77D957F44C60 /* Pods-ABWatchSessionManager_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAAD76ADA2BE6E42AD5A744E0A09FFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3D610AC6485D7181D0F673E75898FC /* Pods-ABWatchSessionManager_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F01504BD940C4C9891DF7F987CDB7680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF83CFF3C70A1866540F86AF45BB8E1F /* Pods-ABWatchSessionManager_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ABWatchSessionManager_Tests/Pods-ABWatchSessionManager_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ABWatchSessionManager_Tests/Pods-ABWatchSessionManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8675670D6464BEBACA5A3917620D3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2ACA511B3742215554D58E33E9868D /* Pods-EampleWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		FC38ACAD60FB3367EB9677D9653E303C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B036EFE82701C872851820D1501DB131 /* ABWatchSessionManager-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ABWatchSessionManager-watchOS/ABWatchSessionManager-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = ABWatchSessionManager;
+				PRODUCT_NAME = ABWatchSessionManager;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BF9C3189344FAB2F664A82F8362CC0 /* Debug */,
+				68A365493258CC9E60664C7A3F70D6AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8217D00DBED6350B41245C2C479B48DA /* Build configuration list for PBXNativeTarget "Pods-ABWatchSessionManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB813B3631B558CACF0F695E22275856 /* Debug */,
+				F01504BD940C4C9891DF7F987CDB7680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ADD4205F3CB84511566AD84D8A5F2B9 /* Build configuration list for PBXNativeTarget "Pods-ABWatchSessionManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAAD76ADA2BE6E42AD5A744E0A09FFBB /* Debug */,
+				B702011189BDC87C6831A671B3DC123E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91E256034B61FB29A302FDB7FCEE953D /* Build configuration list for PBXNativeTarget "ABWatchSessionManager-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6324DB1635B6F37EEFDACB66D3B8A49D /* Debug */,
+				44C3A5017EF95756472FF1DE7E3CA3D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB20E46465B2876B27E87798C4ADD46F /* Build configuration list for PBXNativeTarget "ABWatchSessionManager-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC38ACAD60FB3367EB9677D9653E303C /* Debug */,
+				ACC8F6241A9C2968F39CFC1352B23A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB445D35CD236595E2B68582D87B8FB6 /* Build configuration list for PBXNativeTarget "Pods-EampleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B156400F34AE7357B37E4DFD0F6DE3 /* Debug */,
+				F8675670D6464BEBACA5A3917620D3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

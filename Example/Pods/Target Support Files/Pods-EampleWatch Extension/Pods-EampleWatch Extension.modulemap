@@ -1,0 +1,6 @@
+framework module Pods_EampleWatch_Extension {
+  umbrella header "Pods-EampleWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

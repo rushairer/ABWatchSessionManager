@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'ABWatchSessionManager_Example' do
   pod 'ABWatchSessionManager', :path => '../'
@@ -9,5 +9,12 @@ target 'ABWatchSessionManager_Example' do
     inherit! :search_paths
 
     
+  end
+  
+  target 'EampleWatch Extension' do
+    platform :watchos, '6.0'
+    pod 'ABWatchSessionManager', :path => '../'
+
+
   end
 end

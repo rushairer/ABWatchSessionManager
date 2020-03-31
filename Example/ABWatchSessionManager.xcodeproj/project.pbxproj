@@ -14,16 +14,25 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.m */; };
+		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
+		6003F5A7195388D20070C39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71414B718F0CF41DE17C2F53 /* Pods_EampleWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206A61FFFAD1A700AF921D6 /* Pods_EampleWatch_Extension.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C71789AC243389F4000203EC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71789AA243389F4000203EC /* Interface.storyboard */; };
+		C71789AE243389F5000203EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71789AD243389F5000203EC /* Assets.xcassets */; };
+		C71789B5243389F5000203EC /* EampleWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C71789B4243389F5000203EC /* EampleWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C71789BB243389F5000203EC /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71789BA243389F5000203EC /* InterfaceController.m */; };
+		C71789BE243389F5000203EC /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C71789BD243389F5000203EC /* ExtensionDelegate.m */; };
+		C71789C0243389F6000203EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71789BF243389F6000203EC /* Assets.xcassets */; };
+		C71789C4243389F6000203EC /* EampleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C71789A8243389F4000203EC /* EampleWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C71789CF2433A5D1000203EC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71789CE2433A5D1000203EC /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +43,52 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = ABWatchSessionManager;
 		};
+		C71789B6243389F5000203EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C71789B3243389F5000203EC;
+			remoteInfo = "EampleWatch Extension";
+		};
+		C71789C2243389F6000203EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C71789A7243389F4000203EC;
+			remoteInfo = EampleWatch;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C71789C8243389F6000203EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C71789B5243389F5000203EC /* EampleWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71789CC243389F6000203EC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C71789C4243389F6000203EC /* EampleWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0ABBAAA17ACA05479334F7FB /* ABWatchSessionManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ABWatchSessionManager.podspec; path = ../ABWatchSessionManager.podspec; sourceTree = "<group>"; };
+		0ABBAAA17ACA05479334F7FB /* ABWatchSessionManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ABWatchSessionManager.podspec; path = ../ABWatchSessionManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		207454CB3C19C9EF14A73532 /* Pods-ABWatchSessionManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABWatchSessionManager_Example.release.xcconfig"; path = "Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2D8A3E8B35B251615CF4DD63 /* Pods-EampleWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EampleWatch Extension.debug.xcconfig"; path = "Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		39D19D20D2E619531A7E8C77 /* Pods-EampleWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EampleWatch Extension.release.xcconfig"; path = "Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5B87FF1668BE1DE177DE10E0 /* Pods_ABWatchSessionManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABWatchSessionManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ABWatchSessionManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABWatchSessionManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,10 +98,10 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* ABWatchSessionManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABWatchSessionManager-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABWATCHSESSIONMANAGERAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABWATCHSESSIONMANAGERAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABWATCHSESSIONMANAGERViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABWATCHSESSIONMANAGERViewController.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* ABWatchSessionManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABWatchSessionManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,13 +113,34 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		872A1FB5F3BC8D799E5264E2 /* Pods-ABWatchSessionManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABWatchSessionManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ABWatchSessionManager_Tests/Pods-ABWatchSessionManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D680AA021B4060A9E20F9B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8D680AA021B4060A9E20F9B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		ADC8A1B21E7C7EB493583AA9 /* Pods_ABWatchSessionManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABWatchSessionManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBC6479468275813D24A988B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C206A61FFFAD1A700AF921D6 /* Pods_EampleWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EampleWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71789A8243389F4000203EC /* EampleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EampleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71789AB243389F4000203EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C71789AD243389F5000203EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C71789AF243389F5000203EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71789B4243389F5000203EC /* EampleWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EampleWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71789B9243389F5000203EC /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C71789BA243389F5000203EC /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		C71789BC243389F5000203EC /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		C71789BD243389F5000203EC /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		C71789BF243389F6000203EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C71789C1243389F6000203EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71789CD2433A5D1000203EC /* ABWatchSessionManager_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ABWatchSessionManager_Example.entitlements; sourceTree = "<group>"; };
+		C71789CE2433A5D1000203EC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		DBC6479468275813D24A988B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DEDB96BE2C596DC43CDA3314 /* Pods-ABWatchSessionManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABWatchSessionManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F2D45976852B95DCD119B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +149,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				09405EDAD578A33854E0835D /* Pods_ABWatchSessionManager_Example.framework in Frameworks */,
+				C71789CF2433A5D1000203EC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +164,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71789B1243389F5000203EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71414B718F0CF41DE17C2F53 /* Pods_EampleWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +181,8 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ABWatchSessionManager */,
 				6003F5B5195388D20070C39A /* Tests */,
+				C71789A9243389F4000203EC /* EampleWatch */,
+				C71789B8243389F5000203EC /* EampleWatch Extension */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				E4FFAF6D1834576FDF2D241E /* Pods */,
@@ -112,6 +194,8 @@
 			children = (
 				6003F58A195388D20070C39A /* ABWatchSessionManager_Example.app */,
 				6003F5AE195388D20070C39A /* ABWatchSessionManager_Tests.xctest */,
+				C71789A8243389F4000203EC /* EampleWatch.app */,
+				C71789B4243389F5000203EC /* EampleWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,12 +203,14 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C71789CE2433A5D1000203EC /* HealthKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				ADC8A1B21E7C7EB493583AA9 /* Pods_ABWatchSessionManager_Example.framework */,
 				5B87FF1668BE1DE177DE10E0 /* Pods_ABWatchSessionManager_Tests.framework */,
+				C206A61FFFAD1A700AF921D6 /* Pods_EampleWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,11 +218,12 @@
 		6003F593195388D20070C39A /* Example for ABWatchSessionManager */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.h */,
-				6003F59D195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.m */,
+				C71789CD2433A5D1000203EC /* ABWatchSessionManager_Example.entitlements */,
+				6003F59C195388D20070C39A /* AppDelegate.h */,
+				6003F59D195388D20070C39A /* AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.h */,
-				6003F5A6195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.m */,
+				6003F5A5195388D20070C39A /* ViewController.h */,
+				6003F5A6195388D20070C39A /* ViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -185,6 +272,29 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		C71789A9243389F4000203EC /* EampleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C71789AA243389F4000203EC /* Interface.storyboard */,
+				C71789AD243389F5000203EC /* Assets.xcassets */,
+				C71789AF243389F5000203EC /* Info.plist */,
+			);
+			path = EampleWatch;
+			sourceTree = "<group>";
+		};
+		C71789B8243389F5000203EC /* EampleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C71789B9243389F5000203EC /* InterfaceController.h */,
+				C71789BA243389F5000203EC /* InterfaceController.m */,
+				C71789BC243389F5000203EC /* ExtensionDelegate.h */,
+				C71789BD243389F5000203EC /* ExtensionDelegate.m */,
+				C71789BF243389F6000203EC /* Assets.xcassets */,
+				C71789C1243389F6000203EC /* Info.plist */,
+			);
+			path = "EampleWatch Extension";
+			sourceTree = "<group>";
+		};
 		E4FFAF6D1834576FDF2D241E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +302,9 @@
 				207454CB3C19C9EF14A73532 /* Pods-ABWatchSessionManager_Example.release.xcconfig */,
 				872A1FB5F3BC8D799E5264E2 /* Pods-ABWatchSessionManager_Tests.debug.xcconfig */,
 				6B4630562F96AEACD47F73EE /* Pods-ABWatchSessionManager_Tests.release.xcconfig */,
+				2D8A3E8B35B251615CF4DD63 /* Pods-EampleWatch Extension.debug.xcconfig */,
+				39D19D20D2E619531A7E8C77 /* Pods-EampleWatch Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,10 +320,12 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				01D26E6C13721583838826A0 /* [CP] Embed Pods Frameworks */,
+				C71789CC243389F6000203EC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C71789C3243389F6000203EC /* PBXTargetDependency */,
 			);
 			name = ABWatchSessionManager_Example;
 			productName = ABWatchSessionManager;
@@ -238,6 +351,43 @@
 			productReference = 6003F5AE195388D20070C39A /* ABWatchSessionManager_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C71789A7243389F4000203EC /* EampleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71789C9243389F6000203EC /* Build configuration list for PBXNativeTarget "EampleWatch" */;
+			buildPhases = (
+				C71789A6243389F4000203EC /* Resources */,
+				C71789C8243389F6000203EC /* Embed App Extensions */,
+				2F2D45976852B95DCD119B19 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C71789B7243389F5000203EC /* PBXTargetDependency */,
+			);
+			name = EampleWatch;
+			productName = EampleWatch;
+			productReference = C71789A8243389F4000203EC /* EampleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C71789B3243389F5000203EC /* EampleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71789C5243389F6000203EC /* Build configuration list for PBXNativeTarget "EampleWatch Extension" */;
+			buildPhases = (
+				C42B643560D19D38CD9304FB /* [CP] Check Pods Manifest.lock */,
+				C71789B0243389F5000203EC /* Sources */,
+				C71789B1243389F5000203EC /* Frameworks */,
+				C71789B2243389F5000203EC /* Resources */,
+				22F9E26BE6AA4A40C22E0BC0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EampleWatch Extension";
+			productName = "EampleWatch Extension";
+			productReference = C71789B4243389F5000203EC /* EampleWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,11 +395,25 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ABWATCHSESSIONMANAGER;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = rushairer;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 292J49Y2B4;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 292J49Y2B4;
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					C71789A7243389F4000203EC = {
+						CreatedOnToolsVersion = 11.4;
+						DevelopmentTeam = 292J49Y2B4;
+						ProvisioningStyle = Automatic;
+					};
+					C71789B3243389F5000203EC = {
+						CreatedOnToolsVersion = 11.4;
+						DevelopmentTeam = 292J49Y2B4;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -258,6 +422,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +433,8 @@
 			targets = (
 				6003F589195388D20070C39A /* ABWatchSessionManager_Example */,
 				6003F5AD195388D20070C39A /* ABWatchSessionManager_Tests */,
+				C71789A7243389F4000203EC /* EampleWatch */,
+				C71789B3243389F5000203EC /* EampleWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +459,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71789A6243389F4000203EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71789AE243389F5000203EC /* Assets.xcassets in Resources */,
+				C71789AC243389F4000203EC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71789B2243389F5000203EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71789C0243389F6000203EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -302,7 +486,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ABWatchSessionManager/ABWatchSessionManager.framework",
+				"${BUILT_PRODUCTS_DIR}/ABWatchSessionManager-iOS/ABWatchSessionManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -311,6 +495,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ABWatchSessionManager_Example/Pods-ABWatchSessionManager_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22F9E26BE6AA4A40C22E0BC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ABWatchSessionManager-watchOS/ABWatchSessionManager.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ABWatchSessionManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EampleWatch Extension/Pods-EampleWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		944CF8FDFDD5C7210EFEB19D /* [CP] Check Pods Manifest.lock */ = {
@@ -357,6 +559,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C42B643560D19D38CD9304FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EampleWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,8 +588,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* ABWATCHSESSIONMANAGERAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* ABWATCHSESSIONMANAGERViewController.m in Sources */,
+				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +602,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71789B0243389F5000203EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71789BE243389F5000203EC /* ExtensionDelegate.m in Sources */,
+				C71789BB243389F5000203EC /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -385,6 +618,16 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* ABWatchSessionManager_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		C71789B7243389F5000203EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C71789B3243389F5000203EC /* EampleWatch Extension */;
+			targetProxy = C71789B6243389F5000203EC /* PBXContainerItemProxy */;
+		};
+		C71789C3243389F6000203EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C71789A7243389F4000203EC /* EampleWatch */;
+			targetProxy = C71789C2243389F6000203EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +656,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C71789AA243389F4000203EC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C71789AB243389F4000203EC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -420,23 +671,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -460,22 +725,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -494,6 +773,9 @@
 			baseConfigurationReference = DEDB96BE2C596DC43CDA3314 /* Pods-ABWatchSessionManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ABWatchSessionManager_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 292J49Y2B4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABWatchSessionManager/ABWatchSessionManager-Prefix.pch";
 				INFOPLIST_FILE = "ABWatchSessionManager/ABWatchSessionManager-Info.plist";
@@ -510,6 +792,9 @@
 			baseConfigurationReference = 207454CB3C19C9EF14A73532 /* Pods-ABWatchSessionManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ABWatchSessionManager_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 292J49Y2B4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABWatchSessionManager/ABWatchSessionManager-Prefix.pch";
 				INFOPLIST_FILE = "ABWatchSessionManager/ABWatchSessionManager-Info.plist";
@@ -526,6 +811,7 @@
 			baseConfigurationReference = 872A1FB5F3BC8D799E5264E2 /* Pods-ABWatchSessionManager_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 292J49Y2B4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +837,7 @@
 			baseConfigurationReference = 6B4630562F96AEACD47F73EE /* Pods-ABWatchSessionManager_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 292J49Y2B4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -564,6 +851,170 @@
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABWatchSessionManager_Example.app/ABWatchSessionManager_Example";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		C71789C6243389F6000203EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8A3E8B35B251615CF4DD63 /* Pods-EampleWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 292J49Y2B4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "EampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ABWatchSessionManager-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		C71789C7243389F6000203EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D19D20D2E619531A7E8C77 /* Pods-EampleWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 292J49Y2B4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "EampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ABWatchSessionManager-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		C71789CA243389F6000203EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 292J49Y2B4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = EampleWatch_Extension;
+				INFOPLIST_FILE = EampleWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ABWatchSessionManager-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		C71789CB243389F6000203EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 292J49Y2B4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = EampleWatch_Extension;
+				INFOPLIST_FILE = EampleWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ABWatchSessionManager-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Release;
 		};
@@ -593,6 +1044,24 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71789C5243389F6000203EC /* Build configuration list for PBXNativeTarget "EampleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71789C6243389F6000203EC /* Debug */,
+				C71789C7243389F6000203EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71789C9243389F6000203EC /* Build configuration list for PBXNativeTarget "EampleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71789CA243389F6000203EC /* Debug */,
+				C71789CB243389F6000203EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 //
-//  ABWATCHSESSIONMANAGERViewController.h
+//  ViewController.h
 //  ABWatchSessionManager
 //
 //  Created by rushairer on 03/31/2020.
@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface ABWATCHSESSIONMANAGERViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end
