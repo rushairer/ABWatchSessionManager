@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ABWatchSessionManager'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'WatchSessionManager Manager.'
 
   s.homepage         = 'https://github.com/rushairer/ABWatchSessionManager'

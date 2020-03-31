@@ -1,5 +1,5 @@
 PODS:
-  - ABWatchSessionManager (0.1.0)
+  - ABWatchSessionManager (0.2.0)
 
 DEPENDENCIES:
   - ABWatchSessionManager (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ABWatchSessionManager: 8492962f0d7975ed03c601c557591e0f3aa1bc26
+  ABWatchSessionManager: b5adf03bd39e4379a677cb5946766cbab33092a4
 
-PODFILE CHECKSUM: c5c8c17a876dbdd2e8c5f7f11bff80fdd6573985
+PODFILE CHECKSUM: 4aa162d8362546e0e6a27b844d06b33665cc8344
 
 COCOAPODS: 1.9.1
