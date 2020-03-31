@@ -1,15 +1,14 @@
 {
   "name": "ABWatchSessionManager",
   "version": "0.1.0",
-  "summary": "A short description of ABWatchSessionManager.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "WatchSessionManager Manager.",
   "homepage": "https://github.com/rushairer/ABWatchSessionManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "rushairer": "5195693+rushairer@users.noreply.github.com"
+    "Abenx": "aben@abenx.com"
   },
   "source": {
     "git": "https://github.com/rushairer/ABWatchSessionManager.git",
@@ -17,7 +16,7 @@
   },
   "platforms": {
     "ios": "9.0",
-    "watchos": "6.0"
+    "watchos": "2.0"
   },
   "source_files": "ABWatchSessionManager/Classes/**/*"
 }

@@ -178,6 +178,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				C71789CD2433A5D1000203EC /* ABWatchSessionManager_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ABWatchSessionManager */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -218,7 +219,6 @@
 		6003F593195388D20070C39A /* Example for ABWatchSessionManager */ = {
 			isa = PBXGroup;
 			children = (
-				C71789CD2433A5D1000203EC /* ABWatchSessionManager_Example.entitlements */,
 				6003F59C195388D20070C39A /* AppDelegate.h */,
 				6003F59D195388D20070C39A /* AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,

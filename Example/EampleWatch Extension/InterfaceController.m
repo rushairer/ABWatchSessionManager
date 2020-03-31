@@ -44,6 +44,12 @@
     }
 }
 
+
+- (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
+    if (activationState == WCSessionActivationStateNotActivated) {
+    }
+}
+
 @end
 
 

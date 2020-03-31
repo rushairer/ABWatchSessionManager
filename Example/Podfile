@@ -7,14 +7,11 @@ target 'ABWatchSessionManager_Example' do
 
   target 'ABWatchSessionManager_Tests' do
     inherit! :search_paths
-
-    
   end
   
   target 'EampleWatch Extension' do
-    platform :watchos, '6.0'
+    platform :watchos, '2.0'
     pod 'ABWatchSessionManager', :path => '../'
-
-
   end
+  
 end

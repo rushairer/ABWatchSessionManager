@@ -10,8 +10,6 @@
 
 @interface ABWatchSessionManager()<WCSessionDelegate>
 
-@property (nonatomic, weak) WCSession *session;
-
 @end
 
 @implementation ABWatchSessionManager
@@ -61,6 +59,7 @@
     [self.session activateSession];
 }
 
+#if TARGET_OS_IOS
 - (BOOL)isValidSession __WATCHOS_UNAVAILABLE
 {
     if (self.session.isPaired && self.session.watchAppInstalled) {
@@ -69,6 +68,7 @@
         return NO;
     }
 }
+#endif
 
 - (WCSession *)session
 {
@@ -81,6 +81,7 @@
 
 #pragma mark - WCSessionDelegate
 
+#if __IPHONE_9_3 || __WATCHOS_2_2
 - (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error __IOS_AVAILABLE(9.3) __WATCHOS_AVAILABLE(2.2)
 {
     [self.delegates enumerateObjectsUsingBlock:^(id<WCSessionDelegate> delegate, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -89,9 +90,11 @@
         }
     }];
 }
+#endif
 
 #pragma mark -  iOS App State For Watch
 
+#if TARGET_OS_IOS && __IPHONE_9_3
 - (void)sessionDidBecomeInactive:(WCSession *)session __IOS_AVAILABLE(9.3) __WATCHOS_UNAVAILABLE
 {
     [self.delegates enumerateObjectsUsingBlock:^(id<WCSessionDelegate> delegate, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -109,9 +112,11 @@
         }
     }];
 }
+#endif
 
 #pragma mark - optional following
 
+#if TARGET_OS_IOS
 - (void)sessionWatchStateDidChange:(WCSession *)session __WATCHOS_UNAVAILABLE
 {
     [self.delegates enumerateObjectsUsingBlock:^(id<WCSessionDelegate> delegate, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -120,6 +125,10 @@
         }
     }];
 }
+#endif
+
+
+#if TARGET_OS_WATCH
 - (void)sessionCompanionAppInstalledDidChange:(WCSession *)session __IOS_UNAVAILABLE __WATCHOS_AVAILABLE(6.0)
 {
     [self.delegates enumerateObjectsUsingBlock:^(id<WCSessionDelegate> delegate, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -128,6 +137,7 @@
         }
     }];
 }
+#endif
 
 #pragma mark - Interactive Messaging
 - (void)sessionReachabilityDidChange:(WCSession *)session

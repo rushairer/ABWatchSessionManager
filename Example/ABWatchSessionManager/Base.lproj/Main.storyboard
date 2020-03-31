@@ -30,13 +30,11 @@
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="SfS-5q-xDE"/>
-                                    <constraint firstAttribute="width" constant="240" id="us6-We-gba"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="us6-We-gba"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
-                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Say Hello to Watch" image="message.fill" catalog="system">
+                                <state key="normal" title="Say Hello to Watch">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
                                 </state>
@@ -84,7 +82,4 @@
             <point key="canvasLocation" x="304.34782608695656" y="432.58928571428572"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="message.fill" catalog="system" width="128" height="113"/>
-    </resources>
 </document>
