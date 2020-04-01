@@ -9,7 +9,16 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Disconnected" id="wYb-Kp-8sl">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="wYb-Kp-8sl" id="3bK-NT-UOU"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="34" y="30.357142857142858"/>
         </scene>

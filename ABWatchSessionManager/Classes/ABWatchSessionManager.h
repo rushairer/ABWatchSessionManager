@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol WCSessionDelegate;
 
+typedef id<WCSessionDelegate> _Nullable (^WeakDelegate)(void);
+
 @interface ABWatchSessionManager : NSObject
 
-@property (nonatomic, strong) NSMutableArray<id <WCSessionDelegate>> *delegates;
+@property (nonatomic, strong, readonly) NSMutableArray<WeakDelegate> *delegates;
 
 #if TARGET_OS_IOS
 @property (nonatomic, assign, readonly) BOOL isValidSession __WATCHOS_UNAVAILABLE;
@@ -26,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (ABWatchSessionManager *)sharedInstance;
 
 - (void)startSession;
+- (void)addDelegateObject:(id <WCSessionDelegate>)delegate;
+- (void)removeDelegateObject:(id <WCSessionDelegate>)delegate;
 
 @end
 

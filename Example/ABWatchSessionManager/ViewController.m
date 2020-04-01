@@ -10,12 +10,12 @@
 #import <ABWatchSessionManager/ABWatchSessionManager.h>
 #import <HealthKit/HealthKit.h>
 
-@interface ViewController ()
+@interface ViewController ()<WCSessionDelegate>
 
-@property (nonatomic, strong) IBOutlet UIButton *actionButton;
-@property (nonatomic, strong) IBOutlet UIButton *retryButton;
+@property (nonatomic, weak) IBOutlet UIButton *actionButton;
+@property (nonatomic, weak) IBOutlet UIButton *retryButton;
 
-@property (nonatomic, strong) IBOutlet UILabel *infoLabel;
+@property (nonatomic, weak) IBOutlet UILabel *infoLabel;
 
 @end
 
@@ -24,25 +24,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+    
+    [[ABWatchSessionManager sharedInstance] addDelegateObject:self];
     
     [self checkWatch];
 }
 
+#pragma mark - private methods
+
 - (void)checkWatch
 {
-    if ([ABWatchSessionManager sharedInstance].isValidSession) {
-        self.actionButton.enabled = YES;
-        self.infoLabel.hidden = NO;
+    if ([ABWatchSessionManager sharedInstance].isValidSession && [ABWatchSessionManager sharedInstance].session.isReachable) {
+        [self connecting];
     } else {
-        self.actionButton.enabled = NO;
-        self.infoLabel.hidden = YES;
+        [self disconnected];
     }
+}
+
+- (void)disconnected
+{
+    self.actionButton.enabled = NO;
+    self.infoLabel.hidden = YES;
+}
+
+- (void)connecting
+{
+    self.actionButton.enabled = YES;
+    self.infoLabel.hidden = NO;
 }
 
 - (void)startWatchApp
@@ -56,6 +64,8 @@
         // Fallback on earlier versions
     }
 }
+
+#pragma mark - events
 
 - (IBAction)actionButtonDidClick:(UIButton *)sender
 {
@@ -73,10 +83,31 @@
     [self startWatchApp];
 }
 
-- (void)didReceiveMemoryWarning
+
+#pragma mark - WCSessionDelegate
+
+- (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
+    
+}
+
+- (void)sessionDidBecomeInactive:(nonnull WCSession *)session {
+    
+}
+
+- (void)sessionDidDeactivate:(nonnull WCSession *)session {
+    
+}
+- (void)sessionReachabilityDidChange:(WCSession *)session
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (session.isReachable) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self connecting];
+        });
+    } else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self disconnected];
+        });
+    }
 }
 
 @end

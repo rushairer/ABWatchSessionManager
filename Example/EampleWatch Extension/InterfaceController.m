@@ -12,6 +12,8 @@
 
 @interface InterfaceController ()<WCSessionDelegate>
 
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *statusLabel;
+
 @end
 
 
@@ -19,18 +21,40 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-
-    [[ABWatchSessionManager sharedInstance].delegates addObject:self];
+    
+    [[ABWatchSessionManager sharedInstance] addDelegateObject:self];
 }
 
 - (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
     [super willActivate];
 }
 
 - (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+}
+
+- (void)disconnected
+{
+    [self.statusLabel setText:@"Disconnected"];
+    [self.statusLabel setTextColor:[UIColor darkGrayColor]];
+}
+
+- (void)connecting
+{
+    [self.statusLabel setText:@"Connecting"];
+    [self.statusLabel setTextColor:[UIColor whiteColor]];
+}
+
+#pragma mark - private methods
+
+- (void)sendMessageToPhone:(NSString *)message
+{
+    [[ABWatchSessionManager sharedInstance].session sendMessage:[NSDictionary dictionaryWithObjectsAndKeys:message, @"MSG", nil]
+                                                   replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+        NSLog(@"replyMessage: %@", replyMessage);
+    } errorHandler:^(NSError * _Nonnull error) {
+        NSLog(@"%@", [error description]);
+    }];
 }
 
 #pragma mark - WCSessionDelegate
@@ -38,12 +62,16 @@
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
 {
     NSString *msg = [[message objectForKey:@"MSG"] description];
-    NSLog(@"MSG:%@", msg);
-    if (![msg isEqualToString:@"DONE"]) {
+    
+    if ([msg isEqualToString:@"BYE"]) {
+        [self disconnected];
+    } else if ([msg isEqualToString:@"PING"]) {
+        [self connecting];
+        
+    } else if (![msg isEqualToString:@"DONE"]) {
         replyHandler([NSDictionary dictionaryWithObjectsAndKeys:@"DONE", @"MSG", nil]);
     }
 }
-
 
 - (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
     if (activationState == WCSessionActivationStateNotActivated) {
