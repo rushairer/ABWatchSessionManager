@@ -31,6 +31,9 @@ typedef id<WCSessionDelegate> _Nullable (^WeakDelegate)(void);
 - (void)addDelegateObject:(id <WCSessionDelegate>)delegate;
 - (void)removeDelegateObject:(id <WCSessionDelegate>)delegate;
 
+- (void)sendMessage:(NSDictionary<NSString *, id> *)message replyHandler:(nullable void (^)(NSDictionary<NSString *, id> *replyMessage))replyHandler errorHandler:(nullable void (^)(NSError *error))errorHandler;
+- (void)sendMessageData:(NSData *)data replyHandler:(nullable void (^)(NSData *replyMessageData))replyHandler errorHandler:(nullable void (^)(NSError *error))errorHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

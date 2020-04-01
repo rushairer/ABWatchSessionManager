@@ -28,7 +28,36 @@
     [[ABWatchSessionManager sharedInstance] addDelegateObject:self];
     
     [self checkWatch];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(pingWatch)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(pingWatch)
+                                                 name:UIApplicationWillEnterForegroundNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(byeWatch)
+                                                 name:UIApplicationWillResignActiveNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(byeWatch)
+                                                 name:UIApplicationDidEnterBackgroundNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(byeWatch)
+                                                 name:UIApplicationWillTerminateNotification
+                                               object:nil];
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super viewWillDisappear:animated];
+}
+
 
 #pragma mark - private methods
 
@@ -40,6 +69,27 @@
         [self disconnected];
     }
 }
+
+
+- (void)pingWatch
+{
+    [self sendMsg:@"PING"];
+}
+
+- (void)byeWatch
+{
+    [self sendMsg:@"BYE"];
+}
+
+- (void)sendMsg:(NSString *)msg {
+    [[ABWatchSessionManager sharedInstance] sendMessage:[NSDictionary dictionaryWithObjectsAndKeys:msg, @"MSG", nil]
+                                           replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+    }
+                                           errorHandler:^(NSError * _Nonnull error) {
+    }];
+    
+}
+
 
 - (void)disconnected
 {
@@ -69,12 +119,7 @@
 
 - (IBAction)actionButtonDidClick:(UIButton *)sender
 {
-    [[ABWatchSessionManager sharedInstance].session sendMessage:[NSDictionary dictionaryWithObjectsAndKeys:@"PING", @"MSG", nil]
-                                                   replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
-        NSLog(@"replyMessage: %@", replyMessage);
-    } errorHandler:^(NSError * _Nonnull error) {
-        NSLog(@"%@", [error description]);
-    }];
+    [self pingWatch];
 }
 
 - (IBAction)retryButtonDidClick:(UIButton *)sender

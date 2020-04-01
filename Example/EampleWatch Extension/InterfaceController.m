@@ -49,8 +49,8 @@
 
 - (void)sendMessageToPhone:(NSString *)message
 {
-    [[ABWatchSessionManager sharedInstance].session sendMessage:[NSDictionary dictionaryWithObjectsAndKeys:message, @"MSG", nil]
-                                                   replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+    [[ABWatchSessionManager sharedInstance] sendMessage:[NSDictionary dictionaryWithObjectsAndKeys:message, @"MSG", nil]
+                                           replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
         NSLog(@"replyMessage: %@", replyMessage);
     } errorHandler:^(NSError * _Nonnull error) {
         NSLog(@"%@", [error description]);
@@ -75,6 +75,16 @@
 
 - (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
     if (activationState == WCSessionActivationStateNotActivated) {
+    }
+}
+
+- (void)session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext
+{
+    NSString *msg = [[applicationContext objectForKey:@"MSG"] description];
+    if ([msg isEqualToString:@"BYE"]) {
+        [self disconnected];
+    } else if ([msg isEqualToString:@"PING"]) {
+        [self connecting];
     }
 }
 

@@ -87,7 +87,7 @@ id<WCSessionDelegate> weakDelegateObject(WeakDelegate weakDelegate) {
 
 - (WCSession *)session
 {
-    if (!_session && [WCSession isSupported]) {
+    if (!_session) {
         _session =  [WCSession defaultSession];
     }
     return _session;
@@ -271,6 +271,28 @@ id<WCSessionDelegate> weakDelegateObject(WeakDelegate weakDelegate) {
 - (void)removeDelegateObject:(id <WCSessionDelegate>)delegate
 {
     [self.delegates removeObject:makeWeakDelegate(delegate)];
+}
+
+- (void)sendMessage:(NSDictionary<NSString *, id> *)message replyHandler:(nullable void (^)(NSDictionary<NSString *, id> *replyMessage))replyHandler errorHandler:(nullable void (^)(NSError *error))errorHandler
+{
+#if TARGET_OS_IOS
+    if (![self isValidSession]) return;
+#endif
+    if (self.session.isReachable) {
+        [self.session sendMessage:message replyHandler:replyHandler errorHandler:errorHandler];
+    } else {
+        [self.session updateApplicationContext:message error:nil];
+    }
+}
+
+- (void)sendMessageData:(NSData *)data replyHandler:(nullable void (^)(NSData *replyMessageData))replyHandler errorHandler:(nullable void (^)(NSError *error))errorHandler
+{
+#if TARGET_OS_IOS
+    if (![self isValidSession]) return;
+#endif
+    if (self.session.isReachable) {
+        [self.session sendMessageData:data replyHandler:replyHandler errorHandler:errorHandler];
+    }
 }
 
 #pragma mark - getters and setters
