@@ -66,6 +66,10 @@ id<WCSessionDelegate> weakDelegateObject(WeakDelegate weakDelegate) {
 
 - (void)startSession
 {
+    if (![WCSession isSupported]) {
+        return;
+    }
+    
     self.session.delegate = self;
     [self.session activateSession];
 }
